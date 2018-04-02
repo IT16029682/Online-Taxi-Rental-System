@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function ClickCart()
+		{
+		document.cartclick.submit() ;
+		}
+		</script>
+		
+		
+	
+
+<title>Car Rental Sri Lanka</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+<body>
+<div id="mainContainer">
+  <div id="TopNav">
+    <div class="center">
+      <div class="wrapper">
+      	<a class="link5" href="home2.php" title="Home">Home</a>
+        <a class="link5" href="about.html" title="About Us">About Us</a>
+        <a class="link5" href="rev.html" title="Reservation">Reservation</a>
+        <a class="link5" href="contact.html" title="Contact Us">Contact Us</a>
+        <h2 style="text-align:right;">  </h2>
+      </div>
+    </div>
+  </div>
+  
+<div id="BodyCom" >
+    <div class="center">
+      
+      <div class="wrapper">
+      	
+      	
+      	
+      	
+      	
+      	<div id="revSearch">  
+      		
+     <form  method="post" action="search.php?go"  id="searchform">  
+     	 You  may search cars using names given in list <br />
+       <input  type="text" name="name" required  placeholder="Example - Alto">  
+       <input  type="submit" name="submit" value="Search" class="revButton">  
+        <input  type="button" name="cart" value="Cart" onclick="ClickCart();" class="revButton"> 
+         
+     </form> 
+     
+     <form   action="cart.php"  name="cartclick">
+     	</form>
+     </div> 
+      	
+      	 
+        
+       <form name="MyForm" method="post" action="respond.php" >   
+       	<table      id="rev"  >
+       	<tr>
+<td ><h1 > Reservation Form</h1>  </td>
+</tr>
+             
+
+
+<tr>                 
+<td >Pick up date : </td>                 
+<td><input type="date" name="PDate" required placeholder="yyyy/mm/dd" title="Please Enter Your date"/></td>           
+</tr> 	
+<tr>                 
+<td>Pick up time  : </td>                 
+<td><input type="time" name="PTime" required placeholder="HH:MM:SS " title="Please Enter Your time"/></td>            
+</tr> 
+<tr>                 
+<td>No of Days    : </td>                 
+<td><input type="number" name="NDate"  required placeholder="No of Days "  title="Please enter No of Days this formate ( don't start with zero ): ######### " pattern="[0-9]{9}"/></td>            
+</tr> 
+  
+   	<tr> 
+<td>Car Model     : </td> 
+<td>
+	<select name="vehicles">
+		<option value="Alto">Maruti Alto</option>
+		<option value="Premio">Toyota Premio</option>
+		<option value="Aqua">Toyata Aqua</option>
+		<option value="S600">Benz S600</option>
+		<option value="520D">BMW 520D</option>
+	</select>
+</td>   
+
+</tr>
+<tr>
+	<td> </td>
+<td><input type="submit" value="Reserve" class="revButton"></td>               
+</tr>
+
+
+
+</table>
+</form>
+   	
+          </div>
+        </div>
+ 
+  </div>
+  
+  <div id="Footer">
+    <div class="center">
+      <div class="wrapper">
+        <h2>Copyright  © 2016  All Rights Reserved. </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

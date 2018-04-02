@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<title>Car Rental Sri Lanka</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+<body>
+<div id="mainContainer">
+  <div id="TopNav">
+    <div class="center">
+      <div class="wrapper">
+      	<a class="link5" href="home1.html" title="Home">Home</a>
+        <a class="link5" href="about.html" title="About Us">About Us</a>
+        <a class="link5" href="rev.html" title="Reservation">Reservation</a>
+        <a class="link5" href="contact.html" title="Contact Us">Contact Us</a>
+        <h2 style="text-align:right;">  </h2>
+      </div>
+    </div>
+  </div>
+  
+<div id="BodyCom" >
+    <div class="center">
+      
+      <div class="wrapper">
+      	
+      	
+        
+         <form name="myForm" method="post" action="regformtodb.php">
+	<table width="100%" id="ContactUS">
+		<caption><h1> Registration Form  </h1></caption>
+
+	
+<tr> <td>	Designation: </td> <td>  <select  name="Designation"> 
+					<option value="Mr."> Mr </option>
+			        <option value="Mrs."> Mrs </option>
+					<option value="Dr."> Dr </option>
+					<option value="Ms"> Ms </option> 
+					<option value="Rev"> Rev </option>  </td>
+					</select>
+</td> </tr>
+					
+<tr> <td> First Name</td><td> <input type="text" name="fname" id="fname" required placeholder="Your firstname" title="Please enter your first name in charecter " pattern="[a-zA-Z]{1,}"/> </td>  </tr>    
+<tr> <td> Last Name  </td> <td>  <input type="text" name="lname" id="lname" required placeholder="Your lastname"  title="Please enter your last name in charecter" pattern="[a-zA-Z]{1,}"/><br/> </td> </tr>
+<tr> <td> NIC        </td> <td>  <input type="text" name="nic"  required placeholder="Your NIC number" title="Please enter your NIC number" pattern="[0-9]{9}[v]{1}" >  </td> </tr>
+<tr> <td> Date of birth	     </td> <td>  <input type="date" name="dob" required placeholder="dd/mm/yyyy" title="Please enter the date in dd/mm/yyyy format all in number" pattern="[0-9]{2}[/][0-9]{2}[/][0-9]{4}"/> </td> </tr>
+<tr> <td> Contact No. </td> <td> <input type="tel" name="phone" id="phone" required placeholder="Your phone number "  title="Please enter number in this format ( don't start with zero ): ######### " pattern="[0-9]{9}"/><br/>  </td> </tr>
+ <tr> <td> Email	     </td> <td>  <input type="text" name="email" required placeholder="Your Email Address" title="Enter your email address formate example@example.com" pattern="[a-zA-Z0-9]{4,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" /> </td> </tr>
+<tr> <td> Password	     </td> <td>  <input type="password" required  name="password"> </td> </tr>
+<tr> <td>Confirm Password	     </td> <td>  <input type="password" required  name="cpassword"> </td> </tr>
+<tr> <td> Password recovery question	     </td> <td>  <input type="text" name="rquestion" required> </td> </tr>
+<tr> <td> Answer  </td> <td>  <input type="text" name="ranswer" required> </td> </tr>	
+<tr>
+			<td><input type="submit" value="Submit" name="submit" class="revButton"> 
+				<input type="reset" value"reset"  class="revButton"/>
+				
+			</td>
+		</tr>
+
+</table>
+	   	
+	
+	
+		</form>
+  
+   	
+   	
+          </div>
+        </div>
+ 
+  </div>
+  
+  <div id="Footer">
+    <div class="center">
+      <div class="wrapper">
+        <h2>Copyright  © 2016  All Rights Reserved. </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Theme Styles */
+.flexslider {
+	position: relative;
+
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	/*-webkit-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0px 1px 1px rgba(0,0,0, .2);*/
+}
+
+/* Edit it if you want */
+.flex-container {
+	min-width: 150px;
+	max-width: 970px;
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+
+
+
+
+
+/* Control Nav */
+.flexslider .flex-control-nav {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+	margin: 0 0 0 10px;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 12px;
+	height: 12px;
+	margin: 0 3px;
+	background-color: #b6b6b6 \9;
+
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	-webkit-box-shadow: inset 0 0 0 2px #b6b6b6;
+	-moz-box-shadow: inset 0 0 0 2px #b6b6b6;
+	box-shadow: inset 0 0 0 2px #b6b6b6;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF));
+	background-image: -webkit-linear-gradient(top, #FFF, #FFF);
+	background-image: -moz-linear-gradient(top, #FFF, #FFF);
+	background-image: -o-linear-gradient(top, #FFF, #FFF);
+	background-image: linear-gradient(to bottom, #FFF, #FFF);
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/* Captions */
+.flexslider .slides p {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 5px;
+	margin: 0;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: white;
+
+	background-color: #222222;
+	background: rgba(0,0,0, .9);
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.flex-direction-nav{
+	display:none;
+}

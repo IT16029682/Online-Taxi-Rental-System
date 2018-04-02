@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Car Rental Sri Lanka</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/select-widget-min.js"></script>
+
+
+<!--Slider-->
+
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flexslider').flexslider({
+            animation: 'fade',
+            controlsContainer: '.flexslider'
+        });
+    });
+</script>
+<link rel="stylesheet" href="css/slider.css">
+<!--End Slider-->
+
+
+
+</head>
+<body>
+<div id="mainContainer">
+  <div id="TopNav">
+    <div class="center">
+      <div class="wrapper">
+      	<a class="link5" href="home2.php" title="Home">Home</a>
+        <a class="link5" href="about.html" title="About Us">About Us</a>
+        <a class="link5" href="rev.html" title="Reservation">Reservation</a>
+        <a class="link5" href="contact.html" title="Contact Us">Contact Us</a>
+        <h2 style="text-align:right;"> <?php
+        session_start();
+
+        $name=$_SESSION['user'] ;
+        
+        echo "Hello  ";
+        echo $name;
+
+        ?>
+      
+         <a class="link123" href="pro1.php?">;
+         <?php
+        //echo $_SESSION['user'];
+        echo "</a>";
+        ?> 
+
+        <a href="logout1.php" class="logout"> Log out   </a>
+        </h2>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div id="Slider">
+    <div class="center">
+      <div class="wrapper"></div>
+      <div class="wrapper">
+        <div class="flex-container">
+          <div class="flexslider">
+            <ul class="slides">
+              <li class="mrg"><img src="images/slider/img1.png" /></li>
+              <li class="mrg"><img src="images/slider/img2.png" /></li>
+              <li class="mrg"><img src="images/slider/img3.png" /></li>
+              <li class="mrg"><img src="images/slider/img4.png" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="SearchFilter">
+    <div class="center">
+      <div class="wrapper">
+       
+       
+        <a class="link1" title="CART" href="cart.php" >CART</a>
+
+       
+        
+        
+      </div>
+    </div>
+  </div>
+  <div id="BodyCom">  
+  	<div class="center">
+    	<div class="wrapper">
+        	<table  align="center" id="Side-position" border="1" width="100%">
+  	<tr>
+  <td ><div id="offers"> </div></td>
+  
+  </tr>
+  
+  </table>
+  
+  <div>
+  <table id="social-media-position">
+ 	 
+ 	<tr>
+    <td id="social-media"><!-- Facebook -->
+    <a href="http://www.facebook.com/" target="_blank">
+        <img src="socialMedia/facebook.png" alt="Facebook" />
+    </a>
+    </td>
+    <td id="social-media"><!-- Google+ -->
+    <a href="https://plus.google.com/" target="_blank">
+        <img src="socialMedia/google.png" alt="Google" />
+    </a>
+   </td>
+    <td id="social-media"><!-- Twitter -->
+    <a href="https://twitter.com/" target="_blank">
+        <img src="socialMedia/twitter.png" alt="Twitter" />
+    </a>
+    </td>
+    </tr>
+    
+    </table>
+    </div>
+   
+    </div>
+  </div>
+  </div>
+  
+  
+   <script type="text/javascript">
+				var imageArray = new Array(); 
+					var switchMilliseconds = 2000;
+
+				var divID = 'offers';
+				imageArray[0] = 'side/img1.jpg';
+				imageArray[1] = 'side/img2.png';
+				imageArray[2] = 'side/img3.jpg';
+				
+				function publishPicture(i) {
+				document.getElementById(divID).style.background = 'url("'+imageArray[i]+'") ';
+				document.getElementById(divID).style.backgroundSize = "100% 200px";
+
+				
+				i++;
+				if( i > (imageArray.length - 1) ) { i = 0; }
+				setTimeout('publishPicture('+i+')',switchMilliseconds);
+				}
+				publishPicture(0);
+</script>	
+  
+  
+  <div id="Footer">
+    <div class="center">
+      <div class="wrapper">
+        <h2>Copyright  @ 2016  All Rights Reserved. </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

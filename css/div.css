@@ -1,0 +1,149 @@
+
+/* CSS Document */
+
+#mainContainer{
+	min-width:100%;
+	min-height:50px;
+	/*float:left;*/
+}
+
+#TopNav{
+	float:left;
+	width:100%;
+	height:40px;
+	line-height:35px;
+	background-color:#282D35;
+	border-bottom:1px solid #576273;
+}
+
+
+
+
+#TopNav a{
+	float:left;
+	width:auto;
+	line-height:35px;
+	cursor:pointer;
+	text-transform:uppercase;
+	margin-right:30px;
+}
+
+
+
+#Slider{
+	
+	background-color:black;
+	float:left;
+	min-height:100px;
+	width:100%;
+}
+
+#SearchFilter{
+	float:left;
+	height:30px;
+	padding:10px 0;
+	width:100%;
+	background-color:#282D35;
+	border-bottom:1px solid #576273;
+	border-top:1px solid #576273;
+}
+
+#SearchFilter fieldset{
+	float:left;
+	min-width:100px;
+	height:35px;
+}
+
+#SearchFilter fieldset input[type="email"],#SearchFilter fieldset input[type="password"]{
+	float:left;
+	border:1px solid #576273;
+	background-color:#3D4351;
+	font:sans serif;
+	color:#CCC;
+	width:120px;
+	padding:3px 5px;
+	margin:0 15px 0 0;
+	height:23px;
+}
+
+#SearchFilter input[type="submit"]{
+	min-width:100px;
+	height:30px;
+	line-height:28px;
+	cursor:pointer;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+#BodyCom{
+	float:left;
+	min-height:100px;
+	width:100%;
+	background:white;
+}
+
+
+
+
+#social-media img {
+	width: 30px;
+	margin-right:10px ;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+	
+	
+}
+#social-media img:hover {
+	
+	
+	 
+	  
+    padding: 5px 10px;
+    
+    width: 40px;
+    border-radius: 100px;
+}
+
+#social-media-position
+{
+	float:right;
+	
+}
+
+
+#Footer{
+    background-color: #282d35;
+    border-top: 1px solid #576273;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+}
+
+.mrg{
+	margin-top:75px;
+	margin-bottom:75px;
+}
+
+
+
+.logout{
+	float:right !important;
+	margin:0 0 0 20px !important;
+	padding:0;
+	color:white;
+	font-size:12px;
+}
+
+.forget{
+	min-width:100px;
+	height:30px;
+	line-height:28px;
+	cursor:pointer;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+
